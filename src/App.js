@@ -1,9 +1,10 @@
+import {useStatewithOutHide} from 'react';
 import Header from './components/Layout/Header';
 import Meals from './components/Meals/Meals';
 import CartProvider from './store/CartProvider';
 
 function App() {
-  count[cartIsShown, setCartIsShown]=useState(false);
+  count[cartIsShown, setCartIsShown]=useStatewithOutHide(false);
   function showCartHandler(){
     setCartIsShown(true);
   }
