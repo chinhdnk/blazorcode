@@ -10,13 +10,9 @@ function App() {
     setCartIsShown(true);
   }
 
-  function hideCartHandler(){
-    setCartIsShown(false);
-  }
-
   return (
     <CartProvider>
-      {cartIsShown && <div> Cart ... </div>}
+      {cartIsShown && <div> Cart with edit source </div>}
       <Header onShowCart={showCartHandler}/>
       <main>
         <Meals />
